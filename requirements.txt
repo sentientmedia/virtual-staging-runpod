@@ -1,0 +1,8 @@
+torch
+diffusers[torch]
+transformers
+accelerate
+safetensors
+opencv-python
+pillow
+requests
