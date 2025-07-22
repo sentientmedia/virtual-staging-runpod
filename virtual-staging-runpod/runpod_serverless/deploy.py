@@ -1,6 +1,10 @@
 import runpod
+import os
+from dotenv import load_dotenv
 
-runpod.api_key = "rpa_2BA6UHNALWDDVKBFRO2CNOXKN4GF2I05FOTERXL7dnze9z"  # ← paste your key here
+load_dotenv()
+runpod.api_key = os.getenv("RUNPOD_API_KEY")
+
 
 deployment = runpod.serverless.create_endpoint({
     "name": "virtual-staging",
