@@ -1,0 +1,4 @@
+name: virtual-staging-endpoint
+runtime: python
+handler: runpod_serverless.handler
+entrypoint: runpod_serverless
